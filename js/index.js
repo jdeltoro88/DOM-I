@@ -37,6 +37,7 @@ const siteContent = {
   },
 };
 
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
@@ -135,7 +136,7 @@ const contact_p = document.querySelectorAll ('.contact p');
 
 contact_p[0].setAttribute('style', 'white-space: pre;');
 contact_p[0].textContent = '123 Way 456 Street \r\n';
-contact_p[0].texyContent += 'Somewhere, USA';
+contact_p[0].textContent += 'Somewhere, USA';
 
 contact_p[1].textContent = "1 (888) 888-8888";
 contact_p[2].textContent = "sales@greatidea.io";
