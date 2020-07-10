@@ -42,7 +42,104 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//nav
 
+const navMenu = document.querySelectorAll('a');
+
+navMenu[0].textContent = siteContent['nav']['nav-item-1'];
+navMenu[1].textContent = siteContent['nav']['nav-item-2'];
+navMenu[2].textContent = siteContent['nav']['nav-item-3'];
+navMenu[3].textContent = siteContent['nav']['nav-item-4'];
+navMenu[4].textContent = siteContent['nav']['nav-item-5'];
+navMenu[5].textContent = siteContent['nav']['nav-item-6'];
+
+navMenu.forEach (element => element.style.color = 'green');
+navMenu.forEach (element => element.style.backgroundColor = 'yellow');
+
+
+// additional nav items
+
+const home = document.createElement('a');
+home.textContent = 'Home';
+home.style.color = 'green';
+home.style.backgroundColor = 'yellow';
+document.querySelector('nav').prepend(home);
+
+
+const login = document.createElement('a');
+login.textContent = 'Login';
+login.style.color = 'green';
+login.style.backgroundColor = 'yellow';
+document.querySelector('nav').appendChild(login);
+
+//cta
+
+const ctaTitle = document.querySelector('h1');
+ctaTitle.textContent = siteContent['cta']['h1'];
+
+//cta button
+const ctaButton = document.querySelector('button');
+ctaButton.textContent = siteContent['cta']['button'];
+ctaButton.style.backgroundColor = 'yellow';
+
+//cta img
+const ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
+
+//content h4 p
+
+const contentTitle = document.querySelectorAll('h4');
+
+
+contentTitle[0].textContent = siteContent['main-content']['features-h4'];
+contentTitle[1].textContent = siteContent['main-content']['about-h4'];
+contentTitle[2].textContent = siteContent['main-content']['services-h4'];
+contentTitle[3].textContent = siteContent['main-content']['product-h4'];
+contentTitle[4].textContent = siteContent['main-content']['vision-h4'];
+
+const contentText = document.querySelectorAll('p');
+contentText[0].textContent = siteContent['main-content']['features-content'];
+contentText[1].textContent = siteContent['main-content']['about-content'];
+contentText[2].textContent = siteContent['main-content']['services-content'];
+contentText[3].textContent = siteContent['main-content']['product-content'];
+contentText[4].textContent = siteContent['main-content']['vision-content'];
+
+//middle img
+
+const middlePic = document.querySelector('.middle-img');
+middlePic.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+//contact
+contentTitle[5].textContent = siteContent['contact']['contact-h4'];
+
+contentText[5].textContent = siteContent['contact']['address'];
+contentText[6].textContent = siteContent['contact']['phone'];
+contentText[7].textContent = siteContent['contact']['email'];
+
+
+//footer
+contentText[8].textContent = siteContent['footer']['copyright'];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 //nav bar
 const nav = document.querySelector('nav');
 
@@ -77,7 +174,7 @@ nav.appendChild(login);
 
 // .cta
 
-
+//???????????
 
 const h1 = document.querySelector ('h1');
 //h1.textContent = 'DOM IS AWESOME';
@@ -148,5 +245,8 @@ const footer_p = document.querySelector("footer p");
 footer_p.textContent = "Copyright Great Idea! 2018";
 
 
+
+
+*/
 
 
